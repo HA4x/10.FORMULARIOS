@@ -2,19 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
     <title>Formularios I</title>
+    <style>
+        label
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color: darkgreen;
+        }
+    </style>
 </head>
 <body>
     <h1>Formularios</h1>
-    <form= action="procesa.php" method="get">
+    <form= action="procesa.php" method="post">
         <fieldset>
             <legend>Datos Personales</legend>
             <p>
-            <label for="nomb">Nombre:</label><input id="nomb"  type="text" name="nombre">
+                <label for="nomb">Nombre:</label>
+                <input id="nomb"  type="text" name="nombre">
             </p>
             <p>
-            <label for="Ape">Apellidos:</label><input id="Ape" type="text" name="apellido">
+                <label for="ape">Apellidos:</label>
+                <input id="ape" type="text" name="apellido">
             </p>
         </fieldset>
         <input type="submit" value="Enviar Datos">
